@@ -17,6 +17,14 @@ body {
 
 .darth {
   width: 900px;
-  margin-top: 65px;
+  margin-top: 85px;
   filter: drop-shadow(25px -10px 20px red);
+}
+
+h1 {
+  transition: all 0.3s ease-in-out;
+
+  &&:hover {
+    filter: drop-shadow(10px -5px 10px #fff);
+  }
 }

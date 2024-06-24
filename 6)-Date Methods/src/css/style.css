@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0 0 0;
+}
+
+.darth {
+  width: 900px;
+  margin-top: 85px;
+  filter: drop-shadow(25px -10px 20px red);
+}
+
+h1 {
+  transition: all 0.3s ease-in-out;
+
+  &&:hover {
+    filter: drop-shadow(10px -5px 10px #fff);
+  }
+}
