@@ -13,15 +13,20 @@ let date = new Date();
 // console.log(date.getHours());
 // console.log(date.getMilliseconds());
 // console.log(date.getMinutes());
+
 // ? aylar sifirdan baslayir
 // console.log(date.getMonth());
+
 // ?bunu yazsaq kifayetdir
 // console.log(date.getMonth() + 1);
 // console.log(date.getSeconds());
+
 // ? butov zamani verir
 // console.log(date.toLocaleDateString());
+
 // ? butov vaxti verir
 // console.log(date.toLocaleTimeString());
+
 // ? her ikisini verir
 // console.log(date.toLocaleString());
 
@@ -36,5 +41,13 @@ console.log(date);
 // console.log(date);
 
 // ? saat teyin edir
-date.setHours(16);
-console.log(date);
+// date.setHours(16);
+
+// ? ay teyin edir burdada ay 0 dan baslayir
+// date.setMonth(0);
+
+// ? deqiqeni deyisir
+// date.setMinutes(50);
+
+// ? hal hazirda olan saatin uzerine 2 gel
+date.setHours(date.getHours() + 2);
