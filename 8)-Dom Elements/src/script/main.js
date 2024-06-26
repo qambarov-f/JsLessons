@@ -60,16 +60,15 @@
 //   txt.remove();
 // });
 
-// ? replace child
+// ? replace child burda yeni yaratdiqimiz elementi kohne ile deyisirik
+// const headOne = document.querySelector(".sth");
+// const body = document.querySelector("body");
+// const txt = document.createElement("h4");
 
-const headOne = document.querySelector(".sth");
-const body = document.querySelector("body");
-const txt = document.createElement("h4");
+// txt.textContent = "Hello World";
 
-txt.textContent = "Hello World";
+// console.log(headOne);
+// console.log(txt);
+// console.log(body);
 
-console.log(headOne);
-console.log(txt);
-console.log(body);
-
-body.replaceChild(txt, headOne);
+// body.replaceChild(txt, headOne);
