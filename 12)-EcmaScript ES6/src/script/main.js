@@ -152,3 +152,51 @@ let names = ["John", "Michael", "Leonardo", "Aizek"];
 for (let name of names) {
   console.log(name);
 }
+
+// ? --------------------------------
+
+// ! useing map
+/*
+JavaScript-də iki əsas map anlayışı var: biri Array metodları içərisində olan Array.prototype.map(), digəri isə ES6 ilə tanıdılmış olan Map obyektidir. Hər iki map fərqli məqsədlərə xidmət edir və aşağıda hər biri haqqında qısa məlumat verilmişdir:
+
+1. Array.prototype.map()
+Bu, bir array metodudur və hər bir array elementinə tətbiq olunan funksiyanı çağırır və nəticələri yeni bir array kimi qaytarır. Orijinal array dəyişdirilmədən qalır.
+
+Misal:
+
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(num => num * 2);
+
+console.log(doubled); // [2, 4, 6, 8, 10]
+2. Map Objekti
+Map, ES6 ilə tanıdılmış bir data strukturudur və açar-dəyər cütlərini saxlamaq üçün istifadə olunur. Map obyektində hər hansı bir açar dəyəri (string, number, object və s.) ola bilər.
+
+Misal:
+
+
+const map = new Map();
+
+//* Açar-dəyər cütləri əlavə etmək
+map.set('name', 'John');
+map.set('age', 30);
+
+//* Açar dəyərinə görə dəyəri əldə etmək
+console.log(map.get('name')); // 'John'
+console.log(map.get('age'));  // 30
+
+//* Açarın mövcud olub olmadığını yoxlamaq
+console.log(map.has('name')); // true
+
+//* Bütün açar-dəyər cütlərini təkrarlamaq
+map.forEach((value, key) => {
+  console.log(`${key}: ${value}`);
+});
+
+//* 'name: John'
+//* 'age: 30'
+Qısaca Fərqlər:
+Array.prototype.map(): Array üzərində iterasiya etmək və hər bir elementə funksiyonu tətbiq edərək yeni bir array qaytarmaq üçün istifadə olunur.
+Map Objekti: Açar-dəyər cütlərini saxlamaq üçün istifadə olunur və hər cür açar ola bilər.
+Hər iki map fərqli məqsədlərə xidmət edir və bu fərqləri başa düşmək onların necə və nə vaxt istifadə ediləcəyini müəyyən etmək üçün vacibdir.
+
+*/
