@@ -133,7 +133,7 @@
 
 // ! for in & for of loops
 
-let names = ["John", "Michael", "Leonardo", "Aizek"];
+// let names = ["John", "Michael", "Leonardo", "Aizek"];
 
 // * with forEach
 // names.forEach(name => console.log(name););
@@ -149,9 +149,9 @@ let names = ["John", "Michael", "Leonardo", "Aizek"];
 // }
 
 // * with for of it gives us names in array
-for (let name of names) {
-  console.log(name);
-}
+// for (let name of names) {
+//   console.log(name);
+// }
 
 // ? --------------------------------
 
@@ -200,3 +200,26 @@ Map Objekti: Açar-dəyər cütlərini saxlamaq üçün istifadə olunur və hə
 Hər iki map fərqli məqsədlərə xidmət edir və bu fərqləri başa düşmək onların necə və nə vaxt istifadə ediləcəyini müəyyən etmək üçün vacibdir.
 
 */
+
+// ! OOP
+
+class Person {
+  // ? constructor yaradici metod
+  constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+
+  showInfo() {
+    console.log(`
+        Name: ${this.name}
+        Surname: ${this.surname}
+        Age: ${this.age}`);
+  }
+}
+
+let person1 = new Person("John", "Wick", 35);
+person1.showInfo();
+let person2 = new Person("Leoanrdo", "Davinci", 48);
+person2.showInfo();
