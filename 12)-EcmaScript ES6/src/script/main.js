@@ -204,7 +204,7 @@ Hər iki map fərqli məqsədlərə xidmət edir və bu fərqləri başa düşm�
 // ! OOP
 
 class Person {
-  // ? constructor yaradici metod
+  // ? constructor yar dici metod
   constructor(name, surname, age) {
     this.name = name;
     this.surname = surname;
